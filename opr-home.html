@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Other Places Reader</title>
+    <link href="./resources/css/webdesignpractice.css" type="text/css" rel="stylesheet">
+
+<body>
+    <header>
+        <div class="container" id="archive-nav">
+            <div class="row">
+                <div class="col-xs-6">
+                    <small>WIND & CHAIR  |  PROJECT</small>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="right-corner">
+                        <li><a href="opr-home.html">Home</a></li>
+                        <li><a href="opr-about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="archive-title">
+            <h1>Other Places Reader</h1>
+        </div>
+        <div class=logo-button>
+            <img src="./resources/abyt-logo-long.png" alt="mini-logo" height=40px>
+        </div>
+    </header>
+    <main>
+        <div class="filter-guide">
+            <br><h3>What kind of stories are you looking for ?</h3>
+        </div>
+        <form class="archive-filter">
+            <section>
+                <label for="filter-country">COUNTRY</label>
+                <input type="text" id="filter-country" name="filter-country" list="filter-country-options">
+                    <datalist id="filter-country-options">
+                        <option value="Georgia"></option>
+                        <option value="Algeria"></option>
+                        <option value="Russia"></option>
+                        <option value="Bosnia and Herzgovina"></option>
+                    </datalist>
+            </section>            
+            <section>
+                <label for="filter-media">MEDIA TYPE</label>
+                <select name="filter-media">
+                    <option value="article">ARTICLE</option>
+                    <option value="book">BOOK</option>
+                    <option value="magazine">MAGAZINE</option>
+                    <option value="website">WEBSITE</option>
+                    <option value="photography">PHOTOGRAPHY</option>
+                    <option value="video/film">VIDEO/FILM</option>
+                </select>
+            </section>
+            <section>
+                <label for="filter-sortby">SORT BY</label>
+                <select name="filter-sortby">
+                    <option value="no-sorting">NONE</option>
+                    <option value="popular-first">POPULAR TO ACADEMIC</option>
+                    <option value="academic-first">ACADEMIC TO POPULAR</option>
+                    <option value="LIKE">LIKE</option>
+                    <option value="new-first">DATE OF PUBLISH: NEW TO OLD</option>
+                    <option value="old-first">DATE OF PUBLISH: OLD TO NEW</option>
+                </select>
+            </section>
+            <section>
+                <input type="submit" value="APPLY">
+            </section>
+        </form>                   
+        <div class="archive-card-container">
+            <div class="archive-card">
+               <h2>Bread and Ashes</h2>
+               <p> Georgia</p>
+            </div>
+            <div class="archive-card">
+                <div class="archive-card-text">
+                    <h2>The Balkans very very very long hhhhhhhhhhhhhhhhhhhh</h2>
+                </div>
+             </div>
+             <div class="archive-card">
+                <div class="archive-card-title">
+                    <h2>The Balkans very very very long</h2>
+                    </div>
+                <div class="archive-card-text">
+                    <h2>hhhhhhhhhhhhhhhhhhhh</h2>
+                </div>
+             </div>
+             <div class="archive-card">
+                <h2>The Balkans very very very long hhhhhhhhhhhhhhhhhhhh</h2>
+             </div>
+             <div class="archive-card">
+                <h2>The Balkans very very very long hhhhhhhhhhhhhhhhhhhh</h2>
+             </div>
+        </div>
+
+    </main>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src='./resources/masonry.pkgd.min.js'></script>
+    <script>$('.archive-card-container').masonry({
+        // options
+        percentPosition: true,
+        itemSelector: '.archive-card',
+      });</script>
+</body>
+</html>
