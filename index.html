@@ -4,7 +4,7 @@
 
 <head>
     <title>Other Places Reader</title>
-    <link href="resources/css/webdesignpractice.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/webdesignpractice.css" type="text/css" rel="stylesheet">
 
 <body>
     <header>
@@ -24,13 +24,32 @@
         <div class="archive-title">
             <h1>Other Places Reader</h1>
         </div>
+
+        <div id="notice">
+            <a href="#" id="close-button">&#10006;</a>
+            <h3>Hello! You are visiting a test version of "Other Places Reader", which I built with my newly learnt HTML, CSS and Java Script skills. As my coding knowledge grows, this model will keep evolving too.</h3>
+            <p> <a href="https://www.instagram.com/isnotsong">Follow me on Instagram</a>
+                <br>for future updates and providing feedbacks</p>
+        </div>
+
         <div class=logo-button>
             <img src="./resources/abyt-logo-long.png" alt="mini-logo" height=40px>
         </div>
+
     </header>
+
     <main>
         <div class="filter-guide">
             <br><h3>What kind of stories are you looking for ?</h3>
+        </div>
+        <div class="archive-map">
+            <div class="map-wrapper">
+            <img src="./resources/WORLDMAP-ABYT_MACDADDY-WORLD.svg" alt="world-map" height="1000px">
+            <img class="map-marker" src="./resources/mapmarker-04.png" height="20px" style="top:160px; right:0px;">
+            <img class="map-marker" src="./resources/mapmarker-03.png" height="20px" style="top:230px; right:240px;">
+            <img class="map-marker" src="./resources/mapmarker-book.png" height="26px" style="top:250px; right:90px;">
+            <img class="map-marker" src="./resources/mapmarker-image.png" height="20px" style="top:320px; right:-100px;">
+            </div>
         </div>
         <form class="archive-filter">
             <section>
@@ -96,6 +115,7 @@
         </div>
 
     </main>
+    <script src="./resources/aby-script.js"></script> 
     <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
