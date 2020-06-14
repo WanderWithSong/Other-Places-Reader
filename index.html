@@ -7,20 +7,19 @@
     <link href="./resources/css/webdesignpractice.css" type="text/css" rel="stylesheet">
 
 <body>
+
     <header>
-        <div class="container" id="archive-nav">
-            <div class="row">
-                <div class="col-xs-6">
-                    <small>WIND & CHAIR  |  PROJECT</small>
-                </div>
-                <div class="col-xs-6">
-                    <ul class="right-corner">
-                        <li><a href="opr-home.html">Home</a></li>
-                        <li><a href="opr-about.html">About</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div id=logo-button>
+            <img src="./resources/abyt-logo-long.png" alt="mini-logo" height=36px>
         </div>
+        
+        <div class="archive-nav">
+            <ul>
+                <li><a href="opr-home.html">Home</a></li>
+                <li><a href="opr-about.html">About</a></li>
+            </ul>
+        </div>
+
         <div class="archive-title">
             <h1>Other Places Reader</h1>
         </div>
@@ -30,11 +29,7 @@
             <h3>Hello! You are visiting a test version of "Other Places Reader", which I built with my newly learnt HTML, CSS and Java Script skills. As my coding knowledge grows, this model will keep evolving too.</h3>
             <p> <a href="https://www.instagram.com/isnotsong">Follow me on Instagram</a>
                 <br>for future updates and providing feedbacks</p>
-        </div>
-
-        <div class=logo-button>
-            <img src="./resources/abyt-logo-long.png" alt="mini-logo" height=40px>
-        </div>
+        </div> 
 
     </header>
 
@@ -45,10 +40,10 @@
         <div class="archive-map">
             <div class="map-wrapper">
             <img src="./resources/WORLDMAP-ABYT_MACDADDY-WORLD.svg" alt="world-map" height="1000px">
-            <img class="map-marker" src="./resources/mapmarker-04.png" height="20px" style="top:160px; right:0px;">
-            <img class="map-marker" src="./resources/mapmarker-03.png" height="20px" style="top:230px; right:240px;">
-            <img class="map-marker" src="./resources/mapmarker-book.png" height="26px" style="top:250px; right:90px;">
-            <img class="map-marker" src="./resources/mapmarker-image.png" height="20px" style="top:320px; right:-100px;">
+            <img class="map-marker" src="./resources/mapmarker-web.png" height="20px" style="top:160px; right:400px;">
+            <img class="map-marker" src="./resources/mapmarker-film.png" height="20px" style="top:230px; left:715px;">
+            <img class="map-marker" src="./resources/mapmarker-book.png" height="26px" style="top:250px; right:550px;">
+            <img class="map-marker" src="./resources/mapmarker-image.png" height="20px" style="top:320px; right:350px;">
             </div>
         </div>
         <form class="archive-filter">
@@ -87,17 +82,30 @@
             <section>
                 <input type="submit" value="APPLY">
             </section>
-        </form>                   
+        </form>  
+
+        <div id="side-home" class="toggle">
+            <div class="side-home">
+                <h2>Other Places Reader</h2>
+            </div>
+            <div id="side-home-bookmark">
+                <p>Look at Some<br>-where Else</p>
+            </div>
+        </div>
+
         <div class="archive-card-container">
+
             <div class="archive-card">
                <h2>Bread and Ashes</h2>
                <p> Georgia</p>
             </div>
+
             <div class="archive-card">
                 <div class="archive-card-text">
                     <h2>The Balkans very very very long hhhhhhhhhhhhhhhhhhhh</h2>
                 </div>
              </div>
+
              <div class="archive-card">
                 <div class="archive-card-title">
                     <h2>The Balkans very very very long</h2>
@@ -106,12 +114,7 @@
                     <h2>hhhhhhhhhhhhhhhhhhhh</h2>
                 </div>
              </div>
-             <div class="archive-card">
-                <h2>The Balkans very very very long hhhhhhhhhhhhhhhhhhhh</h2>
-             </div>
-             <div class="archive-card">
-                <h2>The Balkans very very very long hhhhhhhhhhhhhhhhhhhh</h2>
-             </div>
+
         </div>
 
     </main>
@@ -120,11 +123,20 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-    <script src='./resources/masonry.pkgd.min.js'></script>
+
+  <script>
+      function toggle() {
+   $("#side-home").toggleClass("toggle") 
+    }
+    $("#side-home-bookmark").on("click", toggle);
+
+  </script>
+
+   <!---- <script src='./resources/masonry.pkgd.min.js'></script>
     <script>$('.archive-card-container').masonry({
         // options
         percentPosition: true,
         itemSelector: '.archive-card',
-      });</script>
+      });</script> --->
 </body>
 </html>
