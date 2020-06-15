@@ -1,14 +1,4 @@
-let notice = document.getElementById('notice');
-let close = document.getElementById('close-button');
-let hideNotice = function(){
-    notice.style.display='none';
-};
-close.onclick = hideNotice;
 
-
-let bookmark = document.getElementById('side-home-bookmark');
-let sideHome = document.getElementById('side-home');
-let sideHomeStatus = true;
 
 /*
 bookmark.onclick = ()=> {
@@ -21,7 +11,6 @@ bookmark.onclick = ()=> {
    }
 }
 */
-
 
 /*
 window.onscroll = function(){scrollFunction()};

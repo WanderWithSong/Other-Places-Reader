@@ -1,0 +1,70 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3914041, 2020-06-14T20:29:00-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Arthura-Light by Seniors Studio
+ * URL: https://www.myfonts.com/fonts/seniors-studio/arthura/light/
+ * 
+ * Webfont: Arthura-LightItalic by Seniors Studio
+ * URL: https://www.myfonts.com/fonts/seniors-studio/arthura/light-italic/
+ * 
+ * Webfont: Arthura-Italic by Seniors Studio
+ * URL: https://www.myfonts.com/fonts/seniors-studio/arthura/italic/
+ * 
+ * Webfont: Arthura-Regular by Seniors Studio
+ * URL: https://www.myfonts.com/fonts/seniors-studio/arthura/regular/
+ * 
+ * Webfont: Arthura-Medium by Seniors Studio
+ * URL: https://www.myfonts.com/fonts/seniors-studio/arthura/medium/
+ * 
+ * Webfont: Arthura-MediumItalic by Seniors Studio
+ * URL: https://www.myfonts.com/fonts/seniors-studio/arthura/medium-italic/
+ * 
+ * Webfont: Arthura-Bold by Seniors Studio
+ * URL: https://www.myfonts.com/fonts/seniors-studio/arthura/bold/
+ * 
+ * 
+ * Webfonts copyright: Copyright (c) 2018 by Seniors Studio. All rights reserved.&amp;#x000A;
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3bb939");
+  
+@font-face {
+  font-family: 'Arthura-Medium';
+  src: url('webFonts/Arthura-Medium/font.woff2') format('woff2'), url('webFonts/Arthura-Medium/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Arthura-Light';
+  src: url('webFonts/Arthura-Light/font.woff2') format('woff2'), url('webFonts/Arthura-Light/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Arthura-LightItalic';
+  src: url('webFonts/Arthura-LightItalic/font.woff2') format('woff2'), url('webFonts/Arthura-LightItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Arthura-Regular';
+  src: url('webFonts/Arthura-Regular/font.woff2') format('woff2'), url('webFonts/Arthura-Regular/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Arthura-Bold';
+  src: url('webFonts/Arthura-Bold/font.woff2') format('woff2'), url('webFonts/Arthura-Bold/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Arthura-Italic';
+  src: url('webFonts/Arthura-Italic/font.woff2') format('woff2'), url('webFonts/Arthura-Italic/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'Arthura-MediumItalic';
+  src: url('webFonts/Arthura-MediumItalic/font.woff2') format('woff2'), url('webFonts/Arthura-MediumItalic/font.woff') format('woff');
+}
+

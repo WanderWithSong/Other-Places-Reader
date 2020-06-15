@@ -4,31 +4,37 @@
 
 <head>
     <title>Other Places Reader</title>
+    <link rel="stylesheet" type="text/css" href="./resources/Other_Places_Reader.css">
     <link href="./resources/css/webdesignpractice.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./resources/style.css">
 
 <body>
 
     <header>
-        <div id=logo-button>
-            <img src="./resources/abyt-logo-long.png" alt="mini-logo" height=36px>
-        </div>
-        
-        <div class="archive-nav">
-            <ul>
-                <li><a href="opr-home.html">Home</a></li>
-                <li><a href="opr-about.html">About</a></li>
-            </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div id=logo-button>
+                        <img src="./resources/abyt-logo-long.png" alt="mini-logo" height=28px>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <ul class="archive-nav">
+                        <li><a href="opr-home.html">Home</a></li>
+                        <li><a href="opr-about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div class="archive-title">
-            <h1>Other Places Reader</h1>
+            <h1>Other Places<br>Reader</h1>
         </div>
 
         <div id="notice">
-            <a href="#" id="close-button">&#10006;</a>
-            <h3>Hello! You are visiting a test version of "Other Places Reader", which I built with my newly learnt HTML, CSS and Java Script skills. As my coding knowledge grows, this model will keep evolving too.</h3>
-            <p> <a href="https://www.instagram.com/isnotsong">Follow me on Instagram</a>
-                <br>for future updates and providing feedbacks</p>
+            <p>Hello! You are visiting a demo of "Other Places Reader", which I built with my newly learnt HTML, CSS and Java Script skills. As my coding knowledge grows, this model will keep evolving too.</p>
+            <div style="font-family: Diskus RomanItalic; font-size: 1.6rem; color:rgb(110, 134, 235); padding-top: 20px;">Meet me on <a href="https://www.instagram.com/isnotsong" target="_blank">Instagram</a>
+                <br>for future updates and chats!</div>
         </div> 
 
     </header>
@@ -39,7 +45,7 @@
         </div>
         <div class="archive-map">
             <div class="map-wrapper">
-            <img src="./resources/WORLDMAP-ABYT_MACDADDY-WORLD.svg" alt="world-map" height="1000px">
+            <img src="./resources/WORLDMAP-ABYT_MACDADDY-WORLD.jpg" alt="world-map" height="1000px">
             <img class="map-marker" src="./resources/mapmarker-web.png" height="20px" style="top:160px; right:400px;">
             <img class="map-marker" src="./resources/mapmarker-film.png" height="20px" style="top:230px; left:715px;">
             <img class="map-marker" src="./resources/mapmarker-book.png" height="26px" style="top:250px; right:550px;">
@@ -85,15 +91,15 @@
         </form>  
 
         <div id="side-home" class="toggle">
-            <div class="side-home">
-                <h2>Other Places Reader</h2>
+            <div class="side-home-bar">
+                <h2>Other Places<br>Reader</h2>
             </div>
             <div id="side-home-bookmark">
-                <p>Look at Some<br>-where Else</p>
+                <div style="font-family: Arthura-Italic; font-size:1.25rem;">Look at Some<br>-where Else</div>
             </div>
         </div>
 
-        <div class="archive-card-container">
+        <div id="archive-card-container">
 
             <div class="archive-card">
                <h2>Bread and Ashes</h2>
@@ -125,18 +131,29 @@
   crossorigin="anonymous"></script>
 
   <script>
-      function toggle() {
+    
+    function toggle() {
    $("#side-home").toggleClass("toggle") 
     }
     $("#side-home-bookmark").on("click", toggle);
 
+    var topOfCards = $("#archive-card-container").offset().top;
+
+    $(window).scroll(function() {
+    if ($(window).scrollTop() > (topOfCards)) {
+        $("#side-home").fadeIn('fast', 'swing');
+    } else {
+        $("#side-home").fadeOut('fast', 'swing');
+    }
+    }); 
+
+    $(document).click(function(e) {
+    if (e.target.id != 'notice' && !$('#notice').find(e.target).length) {
+        $("#notice").hide();
+    }
+    });
+
   </script>
 
-   <!---- <script src='./resources/masonry.pkgd.min.js'></script>
-    <script>$('.archive-card-container').masonry({
-        // options
-        percentPosition: true,
-        itemSelector: '.archive-card',
-      });</script> --->
 </body>
 </html>
