@@ -203,7 +203,7 @@ header {
 
 .side-archive-filter {
     display: block;
-    margin: 20px 0;
+    margin: 20px 0 60px 0;
     text-align: center;
     padding: 4px;
     font-size: 0.75rem;
@@ -215,6 +215,19 @@ header {
 
 .side-archive-filter section input[type=submit]{
     margin-top: 20px;
+}
+
+.side-contact {
+    padding:0;
+}
+
+.side-contact li{
+    list-style-type: none;
+    display: block;
+    font-zise: 0.7rem;
+    padding: 0;
+    margin: 20px 0 20px 0;
+    text-decoration: underline;
 }
 
 .container {
@@ -383,6 +396,12 @@ select {
 }
 
 .card-sum {
-    padding: 10px 0;
+    margin: 10px 0 40px 0;
     max-width: 710px;
+}
+
+.card-more {
+    z-index: 4;
+    position:absolute;
+    bottom:0;
 }
