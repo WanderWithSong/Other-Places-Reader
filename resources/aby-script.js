@@ -1,4 +1,26 @@
+/*
+follower = document.getElementById('follower');
+map = document.getElementById('archive-map');
 
+mouseX = (event) => {
+  return event.clientX
+}
+
+mouseY = (event) => {
+  return event.clientY
+}
+
+positionElement = (event) => {
+  mouse = {
+    x: mouseX(event),
+    y: mouseY(event)
+  }
+  follower.style.top = mouse.y + 'px'
+  follower.style.left = mouse.x + 'px'
+}
+
+map.addEventListener("mouseover", positionElement);
+*/
 
 /*
 bookmark.onclick = ()=> {
