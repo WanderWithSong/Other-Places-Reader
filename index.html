@@ -4,51 +4,78 @@
 
 <head>
     <title>Other Places Reader</title>
+    <link rel="stylesheet" type="text/css" href="./resources/Other_Places_Reader.css">
     <link href="./resources/css/webdesignpractice.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./resources/style.css">
 
 <body>
+
     <header>
-        <div class="container" id="archive-nav">
-            <div class="row">
-                <div class="col-xs-6">
-                    <small>WIND & CHAIR  |  PROJECT</small>
+        <div class="container">
+
+            <div class="archive-title">
+                <h1>Other Places<br>Reader</h1>
+            </div>
+            
+            <div class="archive-title">
+                <div id=logo-button>
+                    <img src="./resources/abyt-logo-long.png" alt="mini-logo" height=28px style="transform:translateX(10px) translateY(40px) rotate(90deg)">
                 </div>
-                <div class="col-xs-6">
-                    <ul class="right-corner">
+                <div id="archive-nav" >
+                    <ul style="transform:translateX(74px) translateY(18px) rotate(90deg)">
                         <li><a href="opr-home.html">Home</a></li>
                         <li><a href="opr-about.html">About</a></li>
                     </ul>
                 </div>
-            </div>
-        </div>
-        <div class="archive-title">
-            <h1>Other Places Reader</h1>
+            </div>      
+        
         </div>
 
         <div id="notice">
-            <a href="#" id="close-button">&#10006;</a>
-            <h3>Hello! You are visiting a test version of "Other Places Reader", which I built with my newly learnt HTML, CSS and Java Script skills. As my coding knowledge grows, this model will keep evolving too.</h3>
-            <p> <a href="https://www.instagram.com/isnotsong">Follow me on Instagram</a>
-                <br>for future updates and providing feedbacks</p>
-        </div>
-
-        <div class=logo-button>
-            <img src="./resources/abyt-logo-long.png" alt="mini-logo" height=40px>
-        </div>
+            <p>Hello! You are visiting a demo of "Other Places Reader", which I built with my newly learnt HTML, CSS and Java Script skills. As my coding knowledge grows, this model will keep evolving too.</p>
+            <div style="font-family: Diskus RomanItalic; font-size: 1.6rem; color:rgb(110, 134, 235); padding-top: 20px;">Meet me on <a href="https://www.instagram.com/isnotsong" target="_blank">Instagram</a>
+                <br>for future updates and chats!</div>
+        </div> 
 
     </header>
 
     <main>
-        <div class="filter-guide">
-            <br><h3>What kind of stories are you looking for ?</h3>
-        </div>
         <div class="archive-map">
             <div class="map-wrapper">
-            <img src="./resources/WORLDMAP-ABYT_MACDADDY-WORLD.svg" alt="world-map" height="1000px">
-            <img class="map-marker" src="./resources/mapmarker-04.png" height="20px" style="top:160px; right:0px;">
-            <img class="map-marker" src="./resources/mapmarker-03.png" height="20px" style="top:230px; right:240px;">
-            <img class="map-marker" src="./resources/mapmarker-book.png" height="26px" style="top:250px; right:90px;">
-            <img class="map-marker" src="./resources/mapmarker-image.png" height="20px" style="top:320px; right:-100px;">
+                <img src="./resources/WORLDMAP-ABYT_MACDADDY-WORLD.jpg" id="map" alt="world-map" height="1000px">
+                <div class="map-point" style="top:160px; right:400px;">
+                    <img class="map-marker" src="./resources/mapmarker-web.png" height="20px">
+                    <div class="marker-hover">
+                        <h4>Memory of Soviet-Era Communal Living in Notes Left by Neighbors</h4>
+                        <p>Communal Living in Russia: A Virtual Museum of Soviet Everyday Life</p>
+                        <small>Ilya Utekhin(Russia), etc.</small>
+                    </div>
+                </div>
+                <div class="map-point" style="top:230px; left:715px;">
+                    <img class="map-marker" src="./resources/mapmarker-film.png" height="20px">
+                    <div class="marker-hover">
+                        <h4>Memory of Soviet-Era Communal Living in Notes Left by Neighbors</h4>
+                        <p>Communal Living in Russia: A Virtual Museum of Soviet Everyday Life</p>
+                        <small>Ilya Utekhin(Russia), etc.</small>
+                    </div>
+                </div>
+                <div class="map-point" style="top:250px; right:550px;">
+                    <img class="map-marker" src="./resources/mapmarker-book.png" height="26px" >
+                    <div class="marker-hover">
+                       <h4>Memory of Soviet-Era Communal Living in Notes Left by Neighbors</h4> 
+                        <p>Communal Living in Russia: A Virtual Museum of Soviet Everyday Life</p>
+                        <small>Ilya Utekhin(Russia), etc.</small>
+                    </div>
+                </div>
+                <div class="map-point" style="top:320px; right:350px;">
+                    <img class="map-marker" src="./resources/mapmarker-image.png" height="20px" >
+                    <div class="marker-hover">
+                        <h4>Memory of Soviet-Era Communal Living in Notes Left by Neighbors</h4>
+                        <p>Communal Living in Russia: A Virtual Museum of Soviet Everyday Life</p>
+                        <small>Ilya Utekhin(Russia), etc.</small>
+                        
+                    </div>
+                </div>
             </div>
         </div>
         <form class="archive-filter">
@@ -87,31 +114,194 @@
             <section>
                 <input type="submit" value="APPLY">
             </section>
-        </form>                   
-        <div class="archive-card-container">
-            <div class="archive-card">
-               <h2>Bread and Ashes</h2>
-               <p> Georgia</p>
-            </div>
-            <div class="archive-card">
-                <div class="archive-card-text">
-                    <h2>The Balkans very very very long hhhhhhhhhhhhhhhhhhhh</h2>
-                </div>
-             </div>
-             <div class="archive-card">
-                <div class="archive-card-title">
-                    <h2>The Balkans very very very long</h2>
+        </form>  
+
+        <div id="side-home" class="toggle">
+            <div class="side-home-bar">
+                <div class="side-home-map">
+                    <div class="side-map-wrapper">
+                    <img src="./resources/WORLDMAP-ABYT_MACDADDY-WORLD.jpg" alt="world-map" height="600px">
+                    <img class="side-map-marker" src="./resources/mapmarker-web.png" height="20px" style="top:160px; right:400px;">
+                    <img class="side-map-marker" src="./resources/mapmarker-film.png" height="20px" style="top:230px; left:715px;">
+                    <img class="side-map-marker" src="./resources/mapmarker-book.png" height="26px" style="top:250px; right:550px;">
+                    <img class="side-map-marker" src="./resources/mapmarker-image.png" height="20px" style="top:320px; right:350px;">
                     </div>
-                <div class="archive-card-text">
-                    <h2>hhhhhhhhhhhhhhhhhhhh</h2>
                 </div>
-             </div>
-             <div class="archive-card">
-                <h2>The Balkans very very very long hhhhhhhhhhhhhhhhhhhh</h2>
-             </div>
-             <div class="archive-card">
-                <h2>The Balkans very very very long hhhhhhhhhhhhhhhhhhhh</h2>
-             </div>
+                <form class="side-archive-filter">
+                    <section>
+                        <label for="filter-country">COUNTRY</label>
+                        <input type="text" id="filter-country" name="filter-country" list="filter-country-options">
+                            <datalist id="filter-country-options">
+                                <option value="Georgia"></option>
+                                <option value="Algeria"></option>
+                                <option value="Russia"></option>
+                                <option value="Bosnia and Herzgovina"></option>
+                            </datalist>
+                    </section>            
+                    <section>
+                        <label for="filter-media">MEDIA TYPE</label>
+                        <select name="filter-media">
+                            <option value="article">ARTICLE</option>
+                            <option value="book">BOOK</option>
+                            <option value="magazine">MAGAZINE</option>
+                            <option value="website">WEBSITE</option>
+                            <option value="photography">PHOTOGRAPHY</option>
+                            <option value="video/film">VIDEO/FILM</option>
+                        </select>
+                    </section>
+                    <section>
+                        <label for="filter-sortby">SORT BY</label>
+                        <select name="filter-sortby">
+                            <option value="no-sorting">NONE</option>
+                            <option value="popular-first">POPULAR TO ACADEMIC</option>
+                            <option value="academic-first">ACADEMIC TO POPULAR</option>
+                            <option value="LIKE">LIKE</option>
+                            <option value="new-first">DATE OF PUBLISH: NEW TO OLD</option>
+                            <option value="old-first">DATE OF PUBLISH: OLD TO NEW</option>
+                        </select>
+                    </section>
+                    <section>
+                        <input type="submit" value="APPLY">
+                    </section>
+                </form> 
+                <div class="side-home-contact">
+                    <ul class="side-contact">
+                        <li>MEET ME</li>
+                        <li>TALK TO ME</li>
+                        <li>CORRESPOND WITH ME</li>
+                    </ul>
+                </div>
+            </div>
+            <img src="./resources/side-bookmark.png"  id="side-home-bookmark">
+        </div>
+
+        <div class="archive-card-container">
+
+            <div class="archive-card">
+                <h2>Memory of Soviet-Era Communal Living in Notes Left by Neighbors</h2>
+            
+
+                <div class="card-info">
+                    <div class="info-title">
+                            <small> WEBSITE</small>
+                            <h3>Communal Living in Russia: A Virtual Museum of Soviet Everyday Life</h3>
+                    </div>
+                    <div>
+                            <small> RELATED PlACE</small>
+                            <p>Russia</p> 
+                            <small>AUTHOR</small>
+                            <p>Ilya Utekhin(Russia), etc.</p>
+                    </div>
+                </div>
+
+                <div class="card-sum">
+                    <p>After the Bolshevik Revolution of 1917, the Bolsheviks expropriated the apartments of the upper classes to solve the housing shortage. 
+                        The housing authorities deliberately mixed people from different social classes to create a more collective society. The rooms were narrow; 
+                        tenants had to share the kitchen and bathroom; neighbors knew everything about each other... These features made the "Kommunalka" building 
+                        a symbol of early Soviet communal living.</p>
+                </div>
+               <div class="card-more"> 
+                   <small><br><br>MORE</small>
+               </div>
+            </div>
+
+            <div class="archive-card">
+
+                <h2> Antelope Horn; Stone Tower;
+                    the Unknown Communes of the Caucasus Mountain</h2>
+
+                <div class="card-info">
+                    <div class="info-title">
+                            <small>WEBSITE</small>
+                            <h3>Batsav—On the Batsbi and Other Unknown Caucasian People</h3>
+                    </div>
+                    <div>
+                            <small> RELATED PlACE</small>
+                            <p>The Caucasus</p> 
+                            <small>AUTHOR</small>
+                            <p>alexjtb@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="card-sum">
+                    <p>Due to the tough mountainous terrain and inconvenient traffic, the Caucasus region hides many isolated communes. 
+                        In the past, under the threat of bandits and ruthless tribal conflicts, some built their raw residences on the most steep cliffs with stone. 
+                        Some performed rituals involving the huge horns of the goat-antelopes named Tur, and they are mysteries born from human being’s 
+                        eternal bond and struggles with their living environment, ancestors and nature.</p>
+                </div>
+
+                <div class="card-more"> 
+                   <small><br><br>MORE</small>
+                </div>
+
+            </div>
+
+            <div class="archive-card">
+
+                <h2>Livid Youth of the Tumultous “Wilderness”—Growing up in Paris Banlieue</h2>
+
+                <div class="card-info">
+                    <div class="info-title">
+                            <small>FILM</small>
+                            <h3>La Haine &<br>Les Misérables</h3>
+                    </div>
+                    <div>
+                            <small> RELATED PlACE</small>
+                            <p>Paris, France</p> 
+                            <small>DIRECTOR</small>
+                            <p> Mathieu Kassovitz; Ladj Ly</p>
+                    </div>
+                </div>
+                <div class="quote">
+                    "Heard about the guy who fell off a skyscraper? On his way down past each floor, he kept saying to reassure himself: 
+                    So far so good... so far so good... so far so good. How you fall doesn't matter. It's how you land!"
+                </div>
+                <div class="card-sum">
+                    <p>The banlieues are the urban wilderness, no resources of jobs and fun, filled with gansters and drugs. 
+                        Conflicts with the police are easily triggered and hatred would spread like wild fire among the residents, 
+                        involving the youth lost around the neighborhood looking for chances to abreact their sentiments. 
+                        The two movies discussed the evolvement of violence in the banlieue with realistic and tough style of ...</p>
+                </div>
+
+                <div class="card-more"> 
+                   <small><br><br>MORE</small>
+                </div>
+                
+            </div>
+
+            <div class="archive-card">
+
+                <h2>Dispatches from the Past: Witness the World in the 1950s Through These Vintage Booklets </h2>
+
+                <div class="card-info">
+                    <div class="info-title">
+                            <small>BOOK</small>
+                            <h3>American Geographical Society<br>Around the World Program</h3>
+                    </div>
+                    <div>
+                            <small> RELATED PlACE</small>
+                            <p>Around the World</p> 
+                            <small>PRODUCED BY</small>
+                            <p>American Geographical Society</p>
+                    </div>
+                </div>
+                <div class="quote">
+                    "Rising from the sparkling Adriatic Sea like a stark, two dimensional stage backdrop, mountain crests above the Yugoslav coast give no hint of the fascinating land beyond.
+                        They are landscapes from fairy tales, Bible stories, and dreams."
+                </div>
+                <div class="card-sum">
+                    <p>Each booklet introduces one country and comes with photo stickers. They will evoke your nostalgia for a world that has been forever changed by wars, technology, time.. 
+                        This feeling is especially strong when it comes to the Yugoslavia one in my hands. At the time it was made, Yugoslavia was a young republic composed of  very distinct 
+                        cultures and communities, each depicted charmingly by the author, illustrators and photographer. Ordinary people’s lives and folk customs are the focuses of the book.
+                    </p>
+                </div>
+
+                <div class="card-more"> 
+                   <small><br><br>MORE</small>
+                </div>
+                
+            </div>
+
         </div>
 
     </main>
@@ -120,11 +310,31 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-    <script src='./resources/masonry.pkgd.min.js'></script>
-    <script>$('.archive-card-container').masonry({
-        // options
-        percentPosition: true,
-        itemSelector: '.archive-card',
-      });</script>
+
+  <script>
+    
+    function toggle() {
+   $("#side-home").toggleClass("toggle") 
+    }
+    $("#side-home-bookmark").on("click", toggle);
+
+    var topOfCards = $(".archive-card-container").offset().top;
+
+    $(window).scroll(function() {
+    if ($(window).scrollTop() > (topOfCards)) {
+        $("#side-home").fadeIn('fast', 'swing');
+    } else {
+        $("#side-home").fadeOut('fast', 'swing');
+    }
+    }); 
+
+    $(document).click(function(e) {
+    if (e.target.id != 'notice' && !$('#notice').find(e.target).length) {
+        $("#notice").hide();
+    }
+    });
+
+  </script>
+
 </body>
 </html>
